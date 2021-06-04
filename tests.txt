@@ -1,0 +1,82 @@
+new Item('Aged Brie', 0, 50),
+new Item('Aged Brie', 1, 0),
+new Item('Aged Brie', 4, 20),
+new Item('Aged Brie', 10, 1),
+new Item('Aged Brie', 10, 50),
+new Item('Sulfuras, Hand of Ragnaros', 1, 1),
+new Item('Sulfuras, Hand of Ragnaros', 2, 80),
+new Item('Sulfuras, Hand of Ragnaros', 20, 5),
+new Item('Sulfuras, Hand of Ragnaros', 5, 0),
+new Item('Sulfuras, Hand of Ragnaros', 0, 30),
+new Item('Backstage passes to a TAFKAL80ETC concert', 20, 50),
+new Item('Backstage passes to a TAFKAL80ETC concert', 20, 10),
+new Item('Backstage passes to a TAFKAL80ETC concert', 10, 10),
+new Item('Backstage passes to a TAFKAL80ETC concert', 9, 10),
+new Item('Backstage passes to a TAFKAL80ETC concert', 5, 40),
+new Item('Backstage passes to a TAFKAL80ETC concert', 2, 0),
+new Item('Backstage passes to a TAFKAL80ETC concert', 1, 50),
+new Item('Backstage passes to a TAFKAL80ETC concert', 0, 50),
+new Item('Other', 10, 50),
+new Item('Other', 5, 4),
+new Item('Other', 0, 2),
+new Item('Other', 7, 0),
+new Item('Other', 2, 30)
+Results ------------------------------------------------
+items: [
+    Item { name: 'Aged Brie', sellIn: -1, quality: 50 },
+    Item { name: 'Aged Brie', sellIn: 0, quality: 1 },
+    Item { name: 'Aged Brie', sellIn: 3, quality: 21 },
+    Item { name: 'Aged Brie', sellIn: 9, quality: 2 },
+    Item { name: 'Aged Brie', sellIn: 9, quality: 50 },
+    Item { name: 'Sulfuras, Hand of Ragnaros', sellIn: 1, quality: 1 },
+    Item { name: 'Sulfuras, Hand of Ragnaros', sellIn: 2, quality: 80 },
+    Item { name: 'Sulfuras, Hand of Ragnaros', sellIn: 20, quality: 5 },
+    Item { name: 'Sulfuras, Hand of Ragnaros', sellIn: 5, quality: 0 },
+    Item { name: 'Sulfuras, Hand of Ragnaros', sellIn: 0, quality: 30 },
+    Item {
+      name: 'Backstage passes to a TAFKAL80ETC concert',
+      sellIn: 19,
+      quality: 50
+    },
+    Item {
+      name: 'Backstage passes to a TAFKAL80ETC concert',
+      sellIn: 19,
+      quality: 11
+    },
+    Item {
+      name: 'Backstage passes to a TAFKAL80ETC concert',
+      sellIn: 9,
+      quality: 12
+    },
+    Item {
+      name: 'Backstage passes to a TAFKAL80ETC concert',
+      sellIn: 8,
+      quality: 12
+    },
+    Item {
+      name: 'Backstage passes to a TAFKAL80ETC concert',
+      sellIn: 4,
+      quality: 43
+    },
+    Item {
+      name: 'Backstage passes to a TAFKAL80ETC concert',
+      sellIn: 1,
+      quality: 3
+    },
+    Item {
+      name: 'Backstage passes to a TAFKAL80ETC concert',
+      sellIn: 0,
+      quality: 50
+    },
+    Item {
+      name: 'Backstage passes to a TAFKAL80ETC concert',
+      sellIn: -1,
+      quality: 0
+    },
+    Item { name: 'Other', sellIn: 9, quality: 49 },
+    Item { name: 'Other', sellIn: 4, quality: 3 },
+    Item { name: 'Other', sellIn: -1, quality: 0 },
+    Item { name: 'Other', sellIn: 6, quality: 0 },
+    Item { name: 'Other', sellIn: 1, quality: 29 }
+  ]
+}

@@ -16,54 +16,55 @@ export class GildedRose {
     constructor(items = [] as Array<Item>) {
         this.items = items;
     }
-
+    
     updateQuality() {
-        for (let i = 0; i < this.items.length; i++) {
-            if (this.items[i].name != 'Aged Brie' && this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
-                if (this.items[i].quality > 0) {
-                    if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
-                        this.items[i].quality = this.items[i].quality - 1
+        let products = this.items;
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].name != 'Aged Brie' && products[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
+                if (products[i].quality > 0) {
+                    if (products[i].name != 'Sulfuras, Hand of Ragnaros') {
+                        products[i].quality = products[i].quality - 1
                     }
                 }
             } else {
-                if (this.items[i].quality < 50) {
-                    this.items[i].quality = this.items[i].quality + 1
-                    if (this.items[i].name == 'Backstage passes to a TAFKAL80ETC concert') {
-                        if (this.items[i].sellIn < 11) {
-                            if (this.items[i].quality < 50) {
-                                this.items[i].quality = this.items[i].quality + 1
+                if (products[i].quality < 50) {
+                    products[i].quality = products[i].quality + 1
+                    if (products[i].name == 'Backstage passes to a TAFKAL80ETC concert') {
+                        if (products[i].sellIn < 11) {
+                            if (products[i].quality < 50) {
+                                products[i].quality = products[i].quality + 1
                             }
                         }
-                        if (this.items[i].sellIn < 6) {
-                            if (this.items[i].quality < 50) {
-                                this.items[i].quality = this.items[i].quality + 1
+                        if (products[i].sellIn < 6) {
+                            if (products[i].quality < 50) {
+                                products[i].quality = products[i].quality + 1
                             }
                         }
                     }
                 }
             }
-            if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
-                this.items[i].sellIn = this.items[i].sellIn - 1;
+            if (products[i].name != 'Sulfuras, Hand of Ragnaros') {
+                products[i].sellIn = products[i].sellIn - 1;
             }
-            if (this.items[i].sellIn < 0) {
-                if (this.items[i].name != 'Aged Brie') {
-                    if (this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
-                        if (this.items[i].quality > 0) {
-                            if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
-                                this.items[i].quality = this.items[i].quality - 1
+            if (products[i].sellIn < 0) {
+                if (products[i].name != 'Aged Brie') {
+                    if (products[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
+                        if (products[i].quality > 0) {
+                            if (products[i].name != 'Sulfuras, Hand of Ragnaros') {
+                                products[i].quality = products[i].quality - 1
                             }
                         }
                     } else {
-                        this.items[i].quality = this.items[i].quality - this.items[i].quality
+                        products[i].quality = products[i].quality - products[i].quality
                     }
                 } else {
-                    if (this.items[i].quality < 50) {
-                        this.items[i].quality = this.items[i].quality + 1
+                    if (products[i].quality < 50) {
+                        products[i].quality = products[i].quality + 1
                     }
                 }
             }
         }
 
-        return this.items;
+        return products;
     }
 }
